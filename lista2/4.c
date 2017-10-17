@@ -3,88 +3,109 @@
 
 /*Operação soma*/
 
-float soma(float a, float b)
+float soma(float x, float y)
 {
-        return (a+b) ;
+        return (x+y) ;
 }
 
 /*Operação subtração*/
 
-float soma(float a, float b)
+float sub(float x, float y)
 {
-        return (a-b) ;
+        return (x-y) ;
 }
 
 
 /*Operação multiplicação*/
 
-float soma(float a, float b)
+float multi(float x, float y)
 {
-        return (a*b) ;
+        return (x*y) ;
 }
 
 
 /*Operação divisão*/
 
-float soma(float a, float b)
+float div(float x, float y)
 {
-        return (a/b) ;
+        return (x/y) ;
 }
 
 
 /*Operação potenciação*/
 
-float pot(int valor){
-        float pot, n1, n2 ;
-        printf("Digite dois números:\n") ;
-        scanf("%f %f", &n1, &n2) ;
-        pot = pow(n1,n2) ;
-        return pot ;
+float pot(float x, float y)
+{
+        return (pow(x, y)) ;
 }
+
+
+
 
 /*Seleção de opção*/
 
-int opcao (int valor)
+float opcao(int a, float x, float y)
 {
+        switch (a) {
 
-if (valor==1) {
-        resp = soma(valor) ;
-        printf("A resposta é:%f\n", resp) ;
-        }
+         case 1:
+         return soma(x, y) ;
 
-        if (valor==2) {
-        resp = sub(valor) ;
-        printf("A resposta é:%f\n", resp) ;
-        }
+         case 2:
+         return sub(x, y) ;
 
-        if (valor==3) {
-        resp = mult(valor) ;
-        printf("A resposta é:%f\n", resp) ;
-        }
+         case 3:
+         return multi(x, y) ;
 
-        if (valor==4) {
-        resp = div(valor) ;
-        printf("A resposta é:%f\n", resp) ;
-        }
+         case 4:
+         return div(x, y) ;
 
-        if (valor==5) {
-        resp = pot(valor) ;
-        printf("%f\n", resp) ;
+         case 5:
+         return pot(x, y) ;
+
+         default:
+         printf("Operação inválida") ;
+         return -1 ;
+        
         }
 }
 
 
 /*Função principal*/
 
-int main(){
-        int valor ;
-        float resp ;
-        printf("Selecione a operação: (1)soma,(2)sub,(3)mult,(4)div ou (5)pot:\n") ;
-        scanf("%d", &valor) ;
-        resp = opcao (valor) ;
+int main()
+{
+        int a;
+        float x,  y ;
+
+        scanf("%d %f %f", &a, &x, &y) ;
+        printf("%.2f\n", opcao(a, x, y)) ;
+
+        return 0 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
 
        
-}
+
 
 
 
