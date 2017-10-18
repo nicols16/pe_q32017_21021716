@@ -3,18 +3,19 @@
 
 /*Código de  Gauss-Legendre*/
 
-float GL(int a, float b, float t, int p){
+float GL(int a, float b, float t, int p)
+{
         float a1, pi ;
         int cont ;
 
-        while (cont<=10){
+        while(cont<=10){
 
         a1 = (a+b)/2 ;
         b = sqrt((a*b)) ;
         t = t-p*pow((a-a1),2) ;
         p = 2*p ;
         a = a1 ;
-        ++cont ;
+        cont++ ;
 
         } 
 
@@ -24,13 +25,14 @@ float GL(int a, float b, float t, int p){
 
 /*Função principal*/
 
-float main(){
+int main()
+{
         int a = 1, p = 1 ;
-        float b = 1/sqrt(2), t = 1/4 ;
+        float b = 1/sqrt(2), t ;
         float pi ;
-       
+        t = (double) (1/4) ;
         pi = GL(a, b, p, t) ;
-        printf("%.20f\n",&pi) ;
+        printf("%.20f\n", pi) ;
 }
 
 
