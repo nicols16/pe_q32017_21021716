@@ -33,6 +33,8 @@ int main()
         t = (double) (1/4) ;
         pi = GL(a, b, p, t) ;
         printf("%.20f\n", pi) ;
+
+        return 0 ;
 }
 
 
