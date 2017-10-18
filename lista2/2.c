@@ -17,4 +17,6 @@ int main()
         scanf("%f %f %f", &h, &l, &c) ;
         resultado = volume(h, l, c) ;
         printf("%.2f\n", resultado) ;
+
+        return 0 ;
 }
