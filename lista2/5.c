@@ -23,7 +23,7 @@ int coef(int fatorialn, int fatorialk, int fatorialnk)
         return (fatorialn)/((fatorialk)*(fatorialnk)) ;
 }
 
-/*Funçãi principal*/
+/*Função principal*/
 
 int main()
 {
