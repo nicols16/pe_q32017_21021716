@@ -5,22 +5,20 @@
 
 float GL(int a, float b, float t, int p)
 {
-        float a1, pi ;
-        int cont ;
+        float a1 ;
 
-        while(cont<=10){
+        for(int i=0;i<=10;i++){
 
         a1 = (a+b)/2 ;
         b = sqrt((a*b)) ;
         t = t-p*pow((a-a1),2) ;
         p = 2*p ;
         a = a1 ;
-        cont++ ;
-
+       
         } 
 
-        pi = pow((a+b),2)/(4*t) ;
-        return pi ;
+        return (pow((a+b),2)/(4*t)) ;
+      
 }
 
 /*Função principal*/
@@ -28,9 +26,10 @@ float GL(int a, float b, float t, int p)
 int main()
 {
         int a = 1, p = 1 ;
-        float b = 1/sqrt(2), t ;
+        float raiz = sqrt(2), b, t ;
         float pi ;
-        t = (double) (1/4) ;
+        b = 1/raiz ;
+        t = (1/4) ;
         pi = GL(a, b, p, t) ;
         printf("%.20f\n", pi) ;
 
