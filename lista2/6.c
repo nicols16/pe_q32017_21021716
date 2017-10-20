@@ -8,7 +8,7 @@ double delta(double a, double b, double c)
 
         double delt ;
 
-        if(a!=0) {
+        if (a!=0) {
 
         delt = (pow(b, 2) - 4*a*c) ;
         return delt ;
@@ -31,7 +31,7 @@ void bhask(double delt, double a, double b, double c)
         double bha1, bha2;
         
 
-        if(delt>=0) {
+        if (delt>=0) {
 
          bha1 = (-b+sqrt(delt))/(2*a) ;
          bha2 = (-b-sqrt(delt))/(2*a) ;
