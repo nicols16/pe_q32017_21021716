@@ -14,7 +14,7 @@ int main()
 
         int x, y ;
 
-        scanf("%d %d\n", &x, &y) ;
+        scanf("%d %d", &x, &y) ;
         printf("%d\n", pot(x, (y-1))*x) ;
         return 0 ;
 
