@@ -7,7 +7,7 @@ float GL(int a, float b, float t, int p)
 {
         float a1 ;
 
-        for(int i=0;i<=10;i++){
+        for (int i=0;i<=10;i++) {
 
         a1 = (a+b)/2 ;
         b = sqrt((a*b)) ;
