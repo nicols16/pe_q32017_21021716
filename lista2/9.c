@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
+/*Cálculo recursivo da potência. Recursão não caudal*/
+
 int pot(int x, int y)
 {
      
@@ -8,6 +10,8 @@ int pot(int x, int y)
         return (pot(x, (y-1))*x) ;
 
 }
+
+/*Função principal*/
 
 int main()
 {
